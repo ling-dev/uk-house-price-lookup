@@ -1,5 +1,4 @@
 import axios from "axios";
-import _ from "lodash";
 
 import { countryMenu, regionMenu, submitButton, resetButton } from "./menus";
 import {
