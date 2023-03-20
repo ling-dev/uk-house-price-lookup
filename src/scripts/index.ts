@@ -1,3 +1,4 @@
+import "../styles/main.css";
 import axios from "axios";
 
 import { countryMenu, regionMenu, submitButton, resetButton } from "./menus";

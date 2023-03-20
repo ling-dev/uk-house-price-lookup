@@ -93,7 +93,6 @@ export const toggleCountry = () => {
   placeMenu.innerHTML = "";
 
   if (countryMenu.value === "england") {
-    console.log("selected england");
     regionMenu.parentElement?.classList.remove("is-hidden");
   } else if (countryMenu.value === "wales") {
     regionMenu.parentElement?.classList.add("is-hidden");
@@ -210,12 +209,10 @@ export const checkOptions = () => {
         buildstatus: buildStatusMenu.value,
       },
     };
-    console.log("all selected");
     disableButton();
 
     return searchTerm;
   } else {
-    console.log("not all selected");
     printReminder();
   }
 };

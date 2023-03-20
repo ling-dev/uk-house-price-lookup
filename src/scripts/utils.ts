@@ -9,7 +9,6 @@ export const printSuccess = () => {
 };
 
 export const printError = () => {
-  console.log("run printerror");
   alertContainer.innerHTML = `<div class="alert alert-danger" role="alert">
 Sorry! Failed to connect to the API. Please try again later.
 </div>`;

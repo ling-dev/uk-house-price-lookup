@@ -28,8 +28,6 @@ interface finalResult {
 
 export const formatResult = (result: any) => {
   const { dimensions, observations } = result;
-  console.log("dimensions:", dimensions);
-  console.log("obv:", observations);
   const finalResult: finalResult = {
     geography: dimensions.geography.option.id,
     time: dimensions.time.option.id,
@@ -75,7 +73,7 @@ export const formatResult = (result: any) => {
           finalResult.observations.push(dec);
           break;
         default:
-          console.log("Can't find this month");
+          console.log("formatResult - Can't find this month");
       }
     }
   }
